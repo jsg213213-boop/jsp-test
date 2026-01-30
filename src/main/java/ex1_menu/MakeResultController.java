@@ -27,6 +27,6 @@ public class MakeResultController extends HttpServlet {
 
         // 4. 화면 응답 (더미 화면으로 이동 또는 간단한 메시지)
         resp.setContentType("text/html;charset=UTF-8");
-        resp.getWriter().print("<h1>주문이 접수되었습니다. 콘솔을 확인하세요!</h1>");
+        resp.getWriter().print("<h1>" + menuName + " 주문이 접수되었습니다. 콘솔을 확인하세요!</h1>");
     }
 }
