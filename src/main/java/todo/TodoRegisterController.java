@@ -7,13 +7,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "todoRegisterController", urlPatterns = "/todo/register")
+@WebServlet(name = "todoRegisterController", urlPatterns = "/_0202_todo/register")
 public class TodoRegisterController extends HttpServlet {
 
     // 1. 등록 폼 화면 제공 (GET)
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/todo/register.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/_0202_todo/register.jsp").forward(req, resp);
     }
 
     // 2. 등록 처리 (POST) 및 리다이렉트 (PRG 패턴)
